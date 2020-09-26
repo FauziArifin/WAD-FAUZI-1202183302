@@ -3,15 +3,16 @@
     margin: 50px auto;
     display: flex;
     padding: 20px;
-    box-sizing: border-box;
-    border: solid;
 }
 
 .video_box{
-    flex: 1
+    background-color: rgba(220, 221, 184, 0.459);
+    flex: 1;
+    
 }
 .form_box{
-    flex: 1 
+    background-color: rgba(245, 245, 245, 0.863);
+    flex: 1;
 }
 iframe{
     margin-left: 70px;
