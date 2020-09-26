@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/my_style.css">
+  </head>
+
+  <body style="background-color:lightyellow;">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#"><img src="images/logo-ead.png" width="100" alt="logo ead"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="#">Profile</a>
+            <a class="nav-item nav-link" href="#">Product</a>
+            <!-- <a class="nav-item nav-link disabled" href="#">Disabled</a> -->
+          </div>
+        </div>
+    </nav>
+
+
+    <div class="container">
+      <div class="video_box">
+        <iframe src="https://www.youtube.com/embed/AwMeQJ_u73I" frameborder="0"></iframe>
+      </div>
+
+      <div class="form_box">
+        <form action="">
+          <h4>Registrasi Data Pelanggan</h4>
+          <table>
+            <tr>
+              <td>Nama</td>
+              <td></td>
+              <td><input type="text" id='nama' name="nama" placeholder="Nama anda..."></td>
+            </tr>
+            <tr>
+              <td>Nomor HP</td>
+              <td></td>
+              <td><input type="text" id='no_hp' name="no_hp"></td>
+            </tr>
+            <tr>
+              <td>Alamat</td>
+              <td></td>
+              <td><textarea name="alamat" id="alamat" style="width: 100%;"></textarea></td>
+            </tr>
+            <tr>
+              <td>Pembayaran</td>
+              <td></td>
+              <td><input type="radio" name="pembayaran" id="cash"><label for="cash">Cash</label>
+                  <input type="radio" name="pembayaran" id="credit"><label for="credit">Credit</label>
+              </td>
+            </tr>
+            <tr>
+              <td><label for="kategori_pesanan">Kategori Pesanan</label></td>
+              <td></td>
+              <td><select name="kategori_pesanan" id="kategori_pesanan">
+                <option value="keyboard">Keyboard</option>
+                <option value="Mouse">Mouse</option>
+                <option value="Printer">Printer</option>
+                <option value="Monitor">Monitor</option>
+              </select></td>
+            </tr>
+            <tr>
+              <td colspan="3"><button type="kirim" class="btn btn-primary btn-block">Kirim</button></td>
+            </tr>
+
+          </table>
+        </form>
+
+      </div>
+    </div>
+
+    
+
+
+
+  </body>
+</html>

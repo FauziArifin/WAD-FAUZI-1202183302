@@ -1,0 +1,59 @@
+.container{
+    max-width: 1000px;
+    margin: 50px auto;
+    display: flex;
+    padding: 20px;
+    box-sizing: border-box;
+    border: solid;
+}
+
+.video_box{
+    flex: 1
+}
+.form_box{
+    flex: 1 
+}
+iframe{
+    margin-left: 70px;
+    margin-top: 100px;
+    height: 200px;
+    width: 360px;
+}
+h4{
+    text-align: center;
+}
+td{
+    padding: 8px;
+}
+table{
+    margin-top: 30px;
+    margin-left: 40px;
+
+}
+#kategori_pesanan{
+    width: 100%;
+}
+
+.card_image_top{
+    height: 50%;
+}
+
+
+
+.card{
+    max-width: 1000px;
+    margin: 50px auto;
+    display: flex;
+    padding: 20px;
+}
+.banner{
+    width: 500px;
+}
+.center {
+    text-align: center;
+    list-style-position: inside;
+  }
+  .table {
+    margin: auto;
+    width: 70%; 
+ }
