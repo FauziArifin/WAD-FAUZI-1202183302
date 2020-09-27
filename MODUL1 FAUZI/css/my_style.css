@@ -54,7 +54,7 @@ table{
     text-align: center;
     list-style-position: inside;
   }
-  .table {
+.table {
     margin: auto;
     width: 70%; 
  }
