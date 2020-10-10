@@ -69,32 +69,32 @@
                                 echo '<li>' . $service . '</li>';
                             }
                             echo '</ul>';
-                        }else{
-                            echo'no service';
+                        } else {
+                            echo 'no service';
                         }
                         ?>
                     </td>
                     <td>
                         <?php
                         //cek tipe room apa 
-                        if($room_type == 'standard'){
+                        if ($room_type == 'standard') {
                             $price = 100;
-                        }else if($room_type == 'superior'){
+                        } else if ($room_type == 'superior') {
                             $price = 200;
-                        }else{
+                        } else {
                             $price = 300;
                         }
                         $price *= $duration; //price dikalikan berapa hari menginap
 
                         //cek penambahan harga service
-                        if($add_service == ''){
+                        if ($add_service == '') {
                             $price = $price;
-                        }else if(count((array)$add_service) == 2){
+                        } else if (count((array)$add_service) == 2) {
                             $price += 40;
-                        }else{
+                        } else {
                             $price += 20;
                         }
-                        echo '$ '.$price;
+                        echo '$ ' . $price;
                         ?>
                     </td>
 

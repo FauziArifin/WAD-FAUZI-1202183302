@@ -64,7 +64,7 @@
                     <label for="add_service">Add Service(s)</label>
                     <p><small>$ 20/service</small></p>
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" name="add_service[]" value="room service" >
+                        <input class="form-check-input" type="checkbox" name="add_service[]" value="room service">
                         <label class="form-check-label">
                             Room Services
                         </label>
@@ -87,11 +87,11 @@
             <?php if (empty($menu)) : ?>
                 <img class='image_booking' src="images/standard.jpg" alt="Standard Room">
             <?php else : ?>
-                <?php if($menu == 'standard'): ?>
+                <?php if ($menu == 'standard') : ?>
                     <img class='image_booking' src="images/standard.jpg" alt="">
-                <?php elseif ($menu == 'superior'): ?>
+                <?php elseif ($menu == 'superior') : ?>
                     <img class='image_booking' src="images/superior.jpg" alt="">
-                <?php else: ?>
+                <?php else : ?>
                     <img class='image_booking' src="images/luxury.jpg" alt="">
                 <?php endif; ?>
             <?php endif; ?>

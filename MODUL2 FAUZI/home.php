@@ -65,7 +65,7 @@
                     <div class="card-footer">
                         <form action="booking.php" method="POST">
                             <button type="submit" value='superior' class="btn btn-primary" name='menu'>Book now</button>
-                        </form>                       
+                        </form>
                     </div>
                 </div>
             </div>
