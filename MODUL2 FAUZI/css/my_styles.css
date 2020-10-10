@@ -1,0 +1,45 @@
+.container{
+    max-width: 1000px;
+    margin: 50px auto;
+    
+}
+
+.container2{
+    max-width: 1000px;
+    margin: 50px auto;
+    display: flex;
+    padding: 20px;
+    border: midnightblue;
+}
+
+.container_table{
+    max-width: 1000px;
+    margin: 50px auto;
+    
+}
+.box_form{
+    flex: 1;
+    
+}
+.box_image{
+    flex: 1;
+}
+.image_booking {
+    margin-left: 70px;
+    margin-top: 20px;
+    height: 430px;
+    width: 400px;
+  }
+/* $card-title{
+    max-width: 1000px;
+    margin: 50px auto;
+    
+} */
+
+.card-price {
+    color: #0275d8;
+  }
+
+/* .btn_submit {
+    min-width: 500px;
+} */
