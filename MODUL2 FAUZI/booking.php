@@ -50,7 +50,7 @@
                         <?php $menu = $_POST['menu']; ?>
                     <?php endif; ?>
                     <?php if (!empty($menu)) : ?>
-                        <?php echo '<input type="text" class="form-control" name="room" readonly value=' . $menu . '>' ?>;
+                        <?php echo '<input type="text" class="form-control" name="room_type" readonly value='.$menu.'>'?>;
                     <?php else : ?>
                         <select class='form-control' name='room_type'>
                             <option value="standard" selected>Standard</option>
