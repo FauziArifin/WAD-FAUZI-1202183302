@@ -80,7 +80,7 @@
                     <label for="phoneNumber">Phone Number</label>
                     <input type="number" name="phone_number" class="form-control">
                 </div>
-                <button type="submit" value='Kirim' class="btn btn-primary btn-block">Submit</button>
+                <button type="reset" value='Kirim' class="btn btn-primary btn-block">Submit</button>
             </form>
         </div>
         <div class='box_image'>

@@ -27,14 +27,14 @@
 
     <?php
     $number = rand();
-    $nama = $_POST['nama'];
-    $check_in = $_POST['check_in'];
-    $duration = $_POST['duration'];
+    $nama = $_POST[''];
+    $check_in = $_POST[''];
+    $duration = $_POST[''];
     $check_out = $check_in . ' + ' . $duration . ' days';
-    $room_type = $_POST['room_type'];    
-    $phone_number = $_POST['phone_number'];
-    if (isset($_POST['add_service'])) {
-        $add_service = $_POST['add_service'];
+    $room_type = $_POST[''];    
+    $phone_number = $_POST[''];
+    if (isset($_POST[''])) {
+        $add_service = $_POST[''];
     } else {
         $add_service = '';
     }

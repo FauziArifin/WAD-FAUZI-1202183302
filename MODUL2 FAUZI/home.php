@@ -43,7 +43,7 @@
                         <li class="list-group-item">1 Bedroom</li>
                     </ul>
                     <div class="card-footer">
-                        <form action="booking.php" method="POST">
+                        <form method="POST">
                             <button type="submit" value='standard' class="btn btn-primary" name='menu'>Book now</button>
                         </form>
                     </div>
@@ -63,7 +63,7 @@
                         <li class="list-group-item">1 Bathroom with hot water</li>
                     </ul>
                     <div class="card-footer">
-                        <form action="booking.php" method="POST">
+                        <form method="POST">
                             <button type="submit" value='superior' class="btn btn-primary" name='menu'>Book now</button>
                         </form>
                     </div>
@@ -85,7 +85,7 @@
                         <li class="list-group-item">1 Workroom</li>
                     </ul>
                     <div class="card-footer">
-                        <form action="booking.php" method="POST">
+                        <form method="POST">
                             <button type="submit" value='luxury' class="btn btn-primary" name='menu'>Book now</button>
                         </form>
                     </div>
