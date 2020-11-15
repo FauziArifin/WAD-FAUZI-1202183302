@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 15, 2020 at 10:10 AM
+-- Generation Time: Nov 15, 2020 at 10:41 AM
 -- Server version: 10.4.14-MariaDB
 -- PHP Version: 7.2.33
 
@@ -44,6 +44,13 @@ CREATE TABLE `event_table` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
+-- Dumping data for table `event_table`
+--
+
+INSERT INTO `event_table` (`id`, `nama`, `deskripsi`, `gambar`, `kategori`, `tanggal`, `mulai`, `berakhir`, `tempat`, `harga`, `benefit`) VALUES
+(1, 'First Meet ESD Laboratory', 'Hallo Guys ada info penting nih, besok ESD Laboratory mengadakan Open Mind loh!! Jangan  sampai ketinggalan ya!', '1121611318_idea.png', 'offline', '2020-11-20', '19:00:00', '20:00:00', 'Telkkom University', 10000, 'sertifikat,souvenir');
+
+--
 -- Indexes for dumped tables
 --
 
@@ -61,7 +68,7 @@ ALTER TABLE `event_table`
 -- AUTO_INCREMENT for table `event_table`
 --
 ALTER TABLE `event_table`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
