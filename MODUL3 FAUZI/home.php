@@ -1,5 +1,5 @@
 <?php
-include('');
+include('functions.php');
 $event = query('SELECT * FROM event_table');
 $affected = mysqli_affected_rows($conn);
 
