@@ -1,6 +1,6 @@
 <?php
 //koneksi ke database
-$conn = mysqli_connect('localhost', 'root', '', 'wad_modul3_fauzi');
+$conn = mysqli_query('localhost', 'root', '', 'wad_modul3_fauzi');
 
 if (!$conn) {
     echo "<script>alert('failed Connect into database')</script>";
@@ -39,11 +39,7 @@ function buat_event($data)
     $foto = $rand.'_'.$filename;
     move_uploaded_file($_FILES['gambar']['tmp_name'], 'img/'.$foto);
 
-    $query = "INSERT INTO event_table
-                VALUES
-                ('', '$name', '$deskripsi', '$foto', '$kategori', '$tanggal', 
-                '$mulai', '$berakhir', '$tempat', '$harga', '$benefit')
-                ";
+    $query = "";
     mysqli_query($conn, $query);
     return mysqli_affected_rows($conn);
 }
