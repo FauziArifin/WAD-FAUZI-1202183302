@@ -2,7 +2,7 @@
 session_start();
 include('functions.php');
 
-if (!isset($_SESSION['login'])) {
+if (!isset($['login'])) {
     header('Location: login.php');
     exit;
 }
@@ -17,7 +17,7 @@ if (isset($_COOKIE['login'])) {
         $user_id = $_COOKIE['user_id'];
     }
 }else {
-    $user_id =  $_SESSION['user_id'];
+    $user_id =  $['user_id'];
 }
 
 $row_cart = query("SELECT * FROM cart WHERE user_id = $user_id");
