@@ -7,8 +7,8 @@ if (!isset($_SESSION['login'])) {
 }
 include("functions.php");
 
-if (!empty($_[''])) {
-    $navbar = $_[''];
+if (!empty($_COOKIE['warna_bar'])) {
+    $navbar = $_COOKIE['warna_bar'];
 } else {
     $navbar = 'navbar-light bg-light';
 }
