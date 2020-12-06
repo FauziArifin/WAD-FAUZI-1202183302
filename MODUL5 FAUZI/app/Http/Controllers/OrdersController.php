@@ -26,7 +26,7 @@ class OrdersController extends Controller
     {
         $orders = Order::all();
         if ($orders->isEmpty()) {
-            return view('products/emptyProduct');
+            return view('/emptyHistory');
         } else {
             return view('/history', compact('orders'));
         }

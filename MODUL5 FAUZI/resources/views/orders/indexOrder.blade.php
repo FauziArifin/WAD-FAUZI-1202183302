@@ -23,7 +23,7 @@
                         <div class="card-body">
                             <h5 class="card-title">{{ $product->name }}</h5>
                             <p class="card-text">{{ $product->description }}</p>
-                            <b class="card-text">${{ $product->price }}.00</b>
+                            <b class="card-text">${{ number_format($product->price,2)}}</b>
                         </div>
                         <div class="card-footer">
                             @if ($product->stock == 0)

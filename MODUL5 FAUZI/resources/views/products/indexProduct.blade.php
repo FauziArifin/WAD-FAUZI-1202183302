@@ -28,7 +28,7 @@
                     <tr>
                         <td>{{ $loop->iteration }}</td>
                         <td>{{ $product->name }}</td>
-                        <td>${{ $product->price }}.00</td>
+                        <td>${{ number_format($product->price,2)}}</td>
                         <td><a href="products/{{ $product->id }}/edit" class="btn btn-primary">Edit</a>
                             <form action="products/{{ $product->id }}" method="post" class="d-inline">
                                 @csrf
