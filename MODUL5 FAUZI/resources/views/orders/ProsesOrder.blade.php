@@ -59,13 +59,19 @@
             <div class="form-row">
                 <div class="col-md-4">
                     <label for="quantity">Quantity</label>
-                    <input type="number" class="form-control" id="quantity" name='quantity' value="{{ old('quantity') }}">
+                    <input type="number" class="form-control" id="quantity" name='quantity' value="{{ old('quantity') }}"
+                        max="{{ $product->stock }}">
                     @error('quantity')
                         <div class="alert alert-danger">{{ $message }}</div>
                     @enderror
                 </div>
             </div>
-            <button type="submit" class="mt-3 btn-success">Confirm</button>
+            @if ($product->stock == 0)
+                <button type="submit" class="mt-3 btn-seccondary" disabled>Confirm</button>
+            @else
+                <button type="submit" class="mt-3 btn-success">Confirm</button>
+            @endif
+
         </form>
     </div>
 @endsection

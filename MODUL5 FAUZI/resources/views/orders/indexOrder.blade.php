@@ -6,6 +6,7 @@
             width: 100%;
             height: 15vw;
         }
+
     </style>
 @endsection
 @section('title', 'Order')
@@ -25,7 +26,12 @@
                             <b class="card-text">${{ $product->price }}.00</b>
                         </div>
                         <div class="card-footer">
-                            <a href="/orders/{{$product->id}}" class="btn btn-success">Order Now</a>
+                            @if ($product->stock == 0)
+                                <a href="/orders/{{ $product->id }}" class="btn disabled">Order Now</a>
+                            @else
+                                <a href="/orders/{{ $product->id }}" class="btn btn-success">Order Now</a>
+                            @endif
+
                         </div>
                     </div>
                 </div>

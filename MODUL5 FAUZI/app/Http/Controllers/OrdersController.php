@@ -69,8 +69,6 @@ class OrdersController extends Controller
                 ->update([
                     'stock' => $newStock
                 ]);
-        
-        $product = Product::all();
 
         $product = Product::find($request->product_id);
         return view('/orders/ProsesOrder', ['product' => $product]);
