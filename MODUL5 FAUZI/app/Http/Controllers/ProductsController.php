@@ -14,7 +14,7 @@ class ProductsController extends Controller
      */
     public function index()
     {
-        $products = Product::all();
+        $products = ::all();
 
         if ($products->isEmpty()) {
             return view('products/emptyProduct');
@@ -25,7 +25,7 @@ class ProductsController extends Controller
 
     public function indexOrder()
     {
-        $products = Product::all();
+        $products = ::all();
         if ($products->isEmpty()) {
             return view('products/emptyProduct');
         } else {

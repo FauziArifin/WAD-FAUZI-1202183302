@@ -36,7 +36,7 @@ Route::get('/orders/{product}',[ProductsController::class, 'chooseProduct']);
 Route::post('/orders/{product}',[OrdersController::class, 'store']);
 
 //History
-Route::get('/history',[OrdersController::class, 'indexHistory']);
+Route::get('/history',[::class, 'indexHistory']);
 // Route::get('/history', function () {
 //     return view('history');
 // });

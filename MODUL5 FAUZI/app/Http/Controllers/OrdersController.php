@@ -28,7 +28,7 @@ class OrdersController extends Controller
         if ($orders->isEmpty()) {
             return view('/emptyHistory');
         } else {
-            return view('/history', compact('orders'));
+            return view('/', compact('orders'));
         }
     }
     /**
